@@ -32,7 +32,7 @@ public class mysqlconnect {
             ResultSet rs = ps.executeQuery();
             
             while (rs.next()){   
-                list.add(new users(Integer.parseInt(rs.getString("user_id")), rs.getString("username"), rs.getString("password"), rs.getString("email"), rs.getString("type")));               
+                list.add(new users(Integer.parseInt(rs.getString("id")), rs.getString("username"), rs.getString("password"), rs.getString("email"), rs.getString("type")));               
             }
         } catch (Exception e) {
         }

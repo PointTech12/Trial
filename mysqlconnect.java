@@ -14,7 +14,7 @@ public class mysqlconnect {
     public static Connection ConnectDb(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/market","root","");
+            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/tableview","root","joshua123");
            JOptionPane.showMessageDialog(null, "Connection Established");
             return conn;
         } catch (Exception e) {
